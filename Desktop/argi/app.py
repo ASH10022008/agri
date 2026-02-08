@@ -1,6 +1,9 @@
 import streamlit as st
 import joblib
 import numpy as np
+current_dir = os.path.dirname(__file__)
+model_path = os.path.join(current_dir, 'crop_model.pkl')
+encoder_path = os.path.join(current_dir, 'crop_encoder.pkl')
 
 # --- 1. LOAD THE BRAIN ---
 # This looks for the files you created in Phase 1
